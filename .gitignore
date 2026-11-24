@@ -1,0 +1,20 @@
+# datasets and downloads (keep them outside the repository, e.g. ~/datasets.noindex)
+pycls/datasets/data/
+cifar-10-batches-py/
+/*.tar.gz
+/*.zip
+/*.tar
+
+# experiment outputs
+checkpoint/
+/log*.txt
+*.pyth
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
