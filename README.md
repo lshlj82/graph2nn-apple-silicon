@@ -125,7 +125,7 @@ git clone https://github.com/lshlj82/graph2nn-apple-silicon.git
 cd graph2nn-apple-silicon
 conda create -n graph2nn python=3.11 && conda activate graph2nn
 pip install torch torchvision
-pip install -r requirements-macos.txt
+pip install -r requirements.txt
 pip install -e .
 python tools/check_mps.py
 ```
@@ -330,4 +330,4 @@ Please cite the original work:
 ## License
 
 MIT, as the original repository; see [LICENSE](LICENSE) (copyright Facebook, Inc. and its affiliates for the
-original code). The original code is built on [pycls](https://github.com/facebookresearch/pycls).
+original code, and Sang Hoon Lee for the port and its modifications). The original code is built on [pycls](https://github.com/facebookresearch/pycls).

@@ -1,11 +1,16 @@
-networkx == 2.3
-matplotlib == 3.1.1
-yacs == 0.1.6
-pyyaml == 5.1.2
-tensorflow == 2.4.0 # optional, only if you use tensorboardx
-tensorboardx == 2.0 # optional, only if you use tensorboardx
-opencv-python == 4.2.0.34
-simplejson == 3.17.0
-scipy == 1.4.1
-seaborn == 0.9.0
-glob2 == 0.7
+# Requirements (macOS on Apple Silicon: Python 3.10–3.12, native arm64; Linux: the same)
+# Install PyTorch first:   pip install torch torchvision   (on Linux with CUDA: the CUDA build)
+# (the default macOS arm64 wheels include the MPS / Metal backend)
+torch>=2.2
+torchvision>=0.17
+networkx>=3.0
+matplotlib>=3.7
+yacs>=0.1.8
+pyyaml>=6.0
+opencv-python>=4.8      # only needed for ImageNet
+simplejson>=3.19
+scipy>=1.11
+seaborn>=0.13
+glob2>=0.7
+tensorboardx>=2.6       # optional (TENSORBOARD True); no TensorFlow needed
+jupyter                 # optional, for analysis/*.ipynb
